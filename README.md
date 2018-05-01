@@ -1,5 +1,5 @@
 # Amatica-ePADD
-Scripts for translating ePADD packages to Archivemata and back. Intended to be used in the Archivematica automation-tools framework.
+Scripts for translating ePADD packages to Archivematica and back. Intended to be used in the Archivematica automation-tools framework.
 
 ## Scripts
 _amatica-epadd-restructure.py_
@@ -21,3 +21,7 @@ Processing MCP that must be included in Archivematica ingest.
 * does not unpack zip files
 * normalizes files for preservation
 * does not create DIP
+
+## Issues
+* Amatica automatically removes files that start with '.', that might be a problem
+* This workflow only repackages pres. normalized AIPs. I haven't looked into access normalized files in AIPs or DIPs.
