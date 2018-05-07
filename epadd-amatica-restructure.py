@@ -54,7 +54,7 @@ def main(transfer_path):
                     for line in old_file:
                         if 'data/user/blobs' in line:
                             new_line = line.replace('data/user/blobs', '../objects/user/blobs')
-                        new_file.write(new_line)
+                            new_file.write(new_line)
 
     # move bag files to submissionDocumentation
     for bag_file in files(transfer_path):
